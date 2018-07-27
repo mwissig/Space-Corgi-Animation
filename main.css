@@ -1,0 +1,52 @@
+body {
+  margin: 0 auto;
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+
+@keyframes bowRight {
+  from {
+    transform: rotate(-45deg);
+    top: 80vh;
+    left: 10vw;
+    height: 5vh;
+    filter: brightness(20%);
+  }
+  25% {
+    transform: rotate(0deg);
+    left: 40vw;
+    top: 5vh;
+    height: 80vh;
+    filter: brightness(100%);
+  }
+  50% {
+    transform: rotate(45deg);
+    left: 80vw;
+    top: 80vh;
+    height: 5vh;
+    filter: brightness(20%);
+  }
+  75% {
+    transform: rotate(0deg);
+    left: 40vw;
+    top: 5vh;
+    height: 80vh;
+    filter: brightness(100%);
+  }
+  to {
+    transform: rotate(-45deg);
+    left: 10vw;
+    top: 80vh;
+    height: 5vh;
+    filter: brightness(20%);
+  }
+}
+
+.img {
+  position: absolute;
+  height: 60vh;
+  animation-name: bowRight;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
